@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+.venv/
+venv/
+uploads/images/*
+uploads/lineart/*
+uploads/results/*
+uploads/thumbnails/*
+!uploads/.gitkeep
+*.egg-info/
+dist/
+build/
