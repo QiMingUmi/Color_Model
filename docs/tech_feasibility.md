@@ -226,7 +226,7 @@ CREATE TABLE colorize_task (
     style        VARCHAR(50) DEFAULT 'anime',
     status       ENUM('pending', 'processing', 'completed', 'failed') DEFAULT 'pending',
     created_at   DATETIME DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (palette_id) REFERENCES palette(id) ON SET NULL,
+    FOREIGN KEY (palette_id) REFERENCES palette(id) ON DELETE SET NULL,
     INDEX idx_status (status)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
