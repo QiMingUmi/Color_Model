@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-50: #f0f5ff;
+  --color-primary-100: #dce8ff;
+  --color-primary-200: #b4cdff;
+  --color-primary-300: #84abff;
+  --color-primary-400: #5585ff;
+  --color-primary-500: #3366ff;
+  --color-primary-600: #1a4fff;
+  --color-primary-700: #0033e6;
+  --color-primary-800: #0029b3;
+  --color-primary-900: #001f80;
+
+  --color-accent-50: #fdf2ff;
+  --color-accent-100: #fae5ff;
+  --color-accent-200: #f3c5ff;
+  --color-accent-300: #ea9aff;
+  --color-accent-400: #dd66ff;
+  --color-accent-500: #cc33ff;
+  --color-accent-600: #b300e6;
+  --color-accent-700: #8a00b3;
+  --color-accent-800: #620080;
+  --color-accent-900: #3a004d;
+
+  --color-surface-50: #f8f9fc;
+  --color-surface-100: #f1f3f8;
+  --color-surface-200: #e4e7ef;
+  --color-surface-300: #cdd2de;
+  --color-surface-400: #9ca3b8;
+  --color-surface-500: #6b7394;
+  --color-surface-600: #4a5168;
+  --color-surface-700: #353a4d;
+  --color-surface-800: #242838;
+  --color-surface-900: #151825;
+  --color-surface-950: #0d0f18;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-surface-300);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-surface-400);
+}
