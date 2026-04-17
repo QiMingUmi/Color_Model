@@ -85,10 +85,6 @@ export function getTetradic(hex: string): string[] {
   ]
 }
 
-export function getSquare(hex: string): string[] {
-  return getTetradic(hex)
-}
-
 export function generateScheme(hex: string, type: string): string[] {
   switch (type) {
     case 'complementary': return [hex, getComplementary(hex)]
@@ -96,7 +92,7 @@ export function generateScheme(hex: string, type: string): string[] {
     case 'triadic': return getTriadic(hex)
     case 'split-complementary': return getSplitComplementary(hex)
     case 'tetradic': return getTetradic(hex)
-    case 'square': return getSquare(hex)
+    case 'square': return getTetradic(hex)
     default: return [hex]
   }
 }
@@ -131,7 +127,7 @@ export const DEMO_PALETTES: ColorInfo[][] = [
   ],
 ]
 
-export const SCENE_PALETTES = {
+export const SCENE_PALETTES: Record<string, string[]> = {
   warm: ['#FF6B6B', '#FFA07A', '#FFD700', '#FF8C42', '#FF4E50'],
   cool: ['#4FC3F7', '#29B6F6', '#0288D1', '#01579B', '#B3E5FC'],
   nature: ['#2D6A4F', '#40916C', '#52B788', '#95D5B2', '#D8F3DC'],

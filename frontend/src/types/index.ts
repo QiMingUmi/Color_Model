@@ -28,11 +28,6 @@ export interface ColorizeTask {
   createdAt: string
 }
 
-export interface RecommendationRequest {
-  type: 'complementary' | 'analogous' | 'triadic' | 'split-complementary' | 'tetradic' | 'square'
-  baseColor: string
-}
-
 export interface SceneCategory {
   id: string
   name: string
